@@ -10,8 +10,8 @@ Process OGP teflon/tooling images to check for impurities.
 py getSpeckScore.py -f path_to_file/image.png -m 2 -s 0.3
 ```
 `-m`: Method for finding contaminant. \
-`-m = 1` -> Cut on grayscale distribution. \
-`-m = 2` -> Cluster gray values and find % of darkest cluster.\
+`-m = 1` --> Cut on grayscale distribution. Specks tend to have darker pixels than the Teflon surface. \
+`-m = 2` --> Cluster gray values into three clusters and find the percentage of pixels in the darkest cluster.\
 \
 `-s`: Percentage below which sample is flagged for contamination.
 
