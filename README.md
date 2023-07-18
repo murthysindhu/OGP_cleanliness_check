@@ -7,7 +7,7 @@ Process OGP teflon/tooling images to check for impurities.
 ## Check for contaminants in an image:
 
 ```
-py getSpeckScore.py -f path_to_file/image.png -m 2 -s 0.3
+py getSpeckScore.py -f path_to_file/image.png -m 2 -s 0.5
 ```
 `-m`: Method for finding contaminant. \
 `-m = 1` --> Cut on grayscale distribution. Specks tend to have darker pixels than the Teflon surface. \
